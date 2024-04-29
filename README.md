@@ -1,3 +1,7 @@
+NOTE: **All transactions are done on the Scroll Sepolia Testnet**
+
+**Contract Address: 0xc64a92Db7792C9386F14CfeB100D34C9d1d65f2D**
+
 ## Problem Statement
 In the present day, the power of organizing hackathons rely only with central authorities. Thus, people with more reach and influence lead the decision-making process. This leads to a lack of clarity in how funds are managed, potentially leading to less-than-ideal event experiences and a community that feels excluded.
 
