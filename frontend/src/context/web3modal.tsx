@@ -15,7 +15,7 @@ const mainnet = {
 }
 const arbitrumTestnet = {
   chainId: 421614,
-  name: 'Arbitrum Sepolia',
+  name: 'Scroll Sepolia',
   currency: 'ETH',
   explorerUrl: 'https://sepolia-explorer.arbitrum.io',
   rpcUrl: 'https://arbitrum-sepolia.blockpi.network/v1/rpc/public '
@@ -29,14 +29,37 @@ const gnosisTestnet = {
   rpcUrl: 'https://blockscout.chiadochain.net'
 };
 
-const availTestnet = {
+const coreTestnet = {
   chainId: 1115,
   name: 'Core testnet',
-  currency: 'tCORE',
+  currency: 'ETH',
   explorerUrl: 'https://cchain.explorer.avax-test.network',
   rpcUrl: 'https://rpc.test.btcs.network'
 };
 
+const morphTestnet = {
+  chainId: 2710,
+  name: 'Morph testnet',
+  currency: 'ETH',
+  explorerUrl: 'https://explorer-testnet.morphl2.io',
+  rpcUrl: 'https://rpc-testnet.morphl2.io'
+}
+
+const availTestnet = {
+  chainId: 202402021700,
+  name: 'Avail testnet',
+  currency: 'ETH',
+  explorerUrl: 'https://op-avail-sepolia-explorer.alt.technology:443',
+  rpcUrl: 'https://op-avail-sepolia.alt.technology'
+};
+
+const scrollTestnet = {
+  chainId: 534351,
+  name: 'Scroll Sepolia testnet',
+  currency: 'ETH',
+  explorerUrl: 'https://sepolia.scrollscan.com',
+  rpcUrl: 'https://rpc.ankr.com/scroll_sepolia_testnet'
+}
 
 // 3. Create a metadata object
 const metadata = {
@@ -61,7 +84,7 @@ const ethersConfig = defaultConfig({
 // 5. Create a Web3Modal instance
 createWeb3Modal({
   ethersConfig,
-  chains: [mainnet,arbitrumTestnet,gnosisTestnet,availTestnet],
+  chains: [mainnet,arbitrumTestnet,gnosisTestnet,availTestnet,morphTestnet,scrollTestnet,coreTestnet],
   projectId,
   allowUnsupportedChain: true,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
